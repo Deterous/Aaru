@@ -10,9 +10,9 @@
     <Product>Aaru Data Preservation Suite</Product>
     <Title>Aaru Data Preservation Suite</Title>
     <ApplicationVersion>$(Version)</ApplicationVersion>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <NoWarn>CS0649,CS0169</NoWarn>
-    <LangVersion>12</LangVersion>
+    <LangVersion>13</LangVersion>
     <Authors>Natalia Portillo &lt;claunia@claunia.com&gt;</Authors>
     <DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
     <EnableTrimAnalyzer>true</EnableTrimAnalyzer>
@@ -73,7 +73,7 @@
     <!-- TODO: Abandoned project need to find replacement
     <PackageReference Include="OxyPlot.Avalonia-alpha-2020-04-15" Version="1.0.0"/>
     -->
-    <PackageReference Include="System.Text.Encoding.CodePages" Version="8.0.0"/>
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="9.0.0-rc.2.24473.5" />
     <PackageReference Include="Text.Analyzers" Version="3.3.4">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
