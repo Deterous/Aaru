@@ -175,8 +175,12 @@ public sealed partial class ZZZRawImage
                 return MediaType.XDF_35;
             case 2949120:
                 return MediaType.DOS_35_ED;
+            case 5013504: // SyQuest SQ100 cartridge
+                return MediaType.SQ100;
             case 9338880:
                 return MediaType.NEC_35_TD;
+            case 10076160: // SyQuest SQ100 cartridge
+                return MediaType.SQ200;
             case 20818944:
                 return MediaType.Floptical;
             case 33554432:

@@ -738,6 +738,14 @@ public class Dimensions
                 dmns.Thickness = 15;
 
                 return dmns;
+            case MediaType.SQ100:
+            case MediaType.SQ200:
+            case MediaType.SQ300:
+                dmns.Height    = 112.014;
+                dmns.Width     = 109.982;
+                dmns.Thickness = 10.922;
+
+                return dmns;
             case MediaType.EZ135:
             case MediaType.EZ230:
             case MediaType.SQ327:

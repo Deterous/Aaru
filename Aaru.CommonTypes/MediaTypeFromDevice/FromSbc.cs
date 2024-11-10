@@ -433,6 +433,17 @@ public static partial class MediaTypeFromDevice
                                                    blockSize);
 
                         return MediaType.ECMA_99_26;
+                    case 19584 when vendor.Equals("syquest", StringComparison.InvariantCultureIgnoreCase):
+                        AaruConsole.DebugWriteLine(MODULE_NAME,
+                                                   "Drive manufacturer is SyQuest, media has 19584 blocks of 256 bytes, setting media type to SQ100.");
+
+                        return MediaType.SQ200;
+                    case 39360 when vendor.Equals("syquest", StringComparison.InvariantCultureIgnoreCase):
+                        AaruConsole.DebugWriteLine(MODULE_NAME,
+                                                   "Drive manufacturer is SyQuest, media has 39360 blocks of 256 bytes, setting media type to SQ200.");
+
+                        return MediaType.SQ200;
+
                     case 39168 when vendor.StartsWith("iomega", StringComparison.OrdinalIgnoreCase):
                     case 41004 when vendor.StartsWith("iomega", StringComparison.OrdinalIgnoreCase):
                         AaruConsole.DebugWriteLine(MODULE_NAME,

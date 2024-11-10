@@ -773,9 +773,15 @@ public enum MediaType : uint
     Quest = 432,
     /// <summary>SyQuest SparQ 1Gb cartridge</summary>
     SparQ = 433,
-    /// <summary>SyQuest 5Mb cartridge for SQ306RD drive</summary>
+    /// <summary>
+    ///     SyQuest 5Mb, 3.9&quot;, 306 tracks, 2 sides, 32 sectors per track, 256 bytes/sector cartridge for SQ306RD
+    ///     drive
+    /// </summary>
     SQ100 = 434,
-    /// <summary>SyQuest 10Mb cartridge for SQ312RD drive</summary>
+    /// <summary>
+    ///     SyQuest 10Mb, 3.9&quot;, 615 tracks, 2 sides, 32 sectors per track, 256 bytes/sector cartridge for SQ312RD
+    ///     drive
+    /// </summary>
     SQ200 = 435,
     /// <summary>SyQuest 15Mb cartridge for SQ319RD drive</summary>
     SQ300 = 436,

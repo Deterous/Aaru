@@ -224,6 +224,11 @@ public sealed partial class ZZZRawImage
                                 _imageInfo.SectorSize = 1024;
 
                                 break;
+                            case 5013504:  // SyQuest SQ100 cartridge
+                            case 10076160: // SyQuest SQ200 cartridge
+                                _imageInfo.SectorSize = 256;
+
+                                break;
                             case 35002122240:
                                 _imageInfo.SectorSize = 2048;
 
@@ -902,6 +907,18 @@ public sealed partial class ZZZRawImage
                 _imageInfo.Cylinders       = 80;
                 _imageInfo.Heads           = 2;
                 _imageInfo.SectorsPerTrack = 23;
+
+                break;
+            case MediaType.SQ100:
+                _imageInfo.Cylinders       = 306;
+                _imageInfo.Heads           = 2;
+                _imageInfo.SectorsPerTrack = 32;
+
+                break;
+            case MediaType.SQ200:
+                _imageInfo.Cylinders       = 615;
+                _imageInfo.Heads           = 2;
+                _imageInfo.SectorsPerTrack = 32;
 
                 break;
 
